@@ -9,10 +9,6 @@ class CreateArtists < ActiveRecord::Migration
     create_table :artists do |t|
   end
   
-ActiveRecord::Base.establish_connection(
-  :adapter => "sqlite3",
-  :database => "db/artists.sqlite"
-)
 
 sql = <<-SQL
   CREATE TABLE IF NOT EXISTS artists (
