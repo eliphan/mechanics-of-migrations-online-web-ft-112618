@@ -6,7 +6,7 @@ class CreateArtists < ActiveRecord::Migration
   end
   
   def change
-    
+    create_table :artists do |t|
   end
   
 ActiveRecord::Base.establish_connection(
